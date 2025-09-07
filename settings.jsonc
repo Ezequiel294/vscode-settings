@@ -1,0 +1,127 @@
+{
+  // Editor settings
+  "editor.minimap.enabled": false, // Disable minimap
+  "editor.scrollbar.vertical": "auto", // Enable vertical scrollbar automatically
+  "editor.overviewRulerBorder": false, // Disable overview ruler border
+  "editor.hideCursorInOverviewRuler": true, // Hide cursor in overview ruler
+  "editor.formatOnSave": true, // Format code on save
+  "editor.guides.indentation": false, // Disable indentation guides
+  "editor.glyphMargin": true, // Enable glyph margin
+  "editor.autoClosingBrackets": "never", // Disable auto-closing brackets
+  "editor.autoClosingQuotes": "never", // Disable auto-closing quotes
+  "editor.autoClosingOvertype": "never", // Disable auto-closing overtype
+  "editor.autoClosingDelete": "never", // Disable auto-closing delete
+  "editor.bracketPairColorization.enabled": false, // Disable bracket pair colorization
+  "editor.lineNumbers": "relative", // Show relative line numbers
+  "editor.fontSize": 16, // Set font size to 16
+  "editor.fontFamily": "'JetbrainsMono Nerd Font', 'Droid Sans Mono', 'monospace', monospace", // Set font family
+  "editor.rulers": [
+    80 // Show vertical ruler at column 81
+  ],
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit", // Organize imports on save
+    "source.fixAll.eslint": "explicit", // Fix all ESLint issues on save
+    "source.addMissingImports": "explicit", // Add missing imports on save
+    "source.updateImports": "explicit" // Update imports on save
+  },
+  // Workbench settings
+  "workbench.sideBar.location": "right", // Move sidebar to the right
+  "workbench.editor.showTabs": "single", // Show single tab
+  "workbench.startupEditor": "none", // Set icon theme to vscode-icons
+  "workbench.colorTheme": "GitHub Dark Default", // Set color theme to GitHub Dark Default
+  // Window settings
+  "window.menuBarVisibility": "toggle", // Toggle menu bar visibility
+  // Terminal settings
+  "terminal.integrated.defaultProfile.windows": "PowerShell", // Set default terminal profile to PowerShell
+  "terminal.integrated.defaultProfile.linux": "fish", // Set default terminal profile to fish
+  // Code Runner settings
+  "code-runner.runInTerminal": true, // Run code in terminal
+  // Git settings
+  "git.autofetch": true, // Enable auto-fetch for Git
+  // GitHub Copilot settings
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false
+  }, // Enable GitHub Copilot
+  "github.copilot.editor.enableAutoCompletions": true, // Enable auto-completions for GitHub Copilot
+  // Vim settings
+  "vim.easymotion": true, // Enable EasyMotion
+  "vim.incsearch": true, // Enable incremental search
+  "vim.useSystemClipboard": true, // Use system clipboard
+  "vim.hlsearch": true, // Highlight search results
+  "vim.leader": " ", // Set leader to the space bar
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "e"
+      ],
+      "commands": [
+        "workbench.action.toggleSidebarVisibility"
+      ] // Toggle sidebar visibility
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "f"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ] // Open file finder
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "b"
+      ],
+      "commands": [
+        "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+      ] // Find open buffer file
+    },
+    {
+      "before": [
+        "<leader>",
+        "<CR>"
+      ],
+      "commands": [
+        "workbench.action.terminal.toggleTerminal"
+      ] // Toggle the integrated terminal
+    }
+  ],
+  // Python specific settings
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8" // Use autopep8 as the default formatter
+  },
+  // TypeScript specific settings
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Use Prettier as the default formatter
+  },
+  // TypeScript React specific settings
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Use Prettier as the default formatter
+  },
+  // Javascript specific settings
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // JavaScript React specific settings
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Use Prettier as the default formatter
+  },
+  // CSS specific settings
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Use Prettier as the default formatter
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "containers.containerClient": "com.microsoft.visualstudio.containers.docker",
+  "workbench.iconTheme": "vscode-icons",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "python.defaultInterpreterPath": "/home/ezequiel/.conda/envs/cs3368/bin/python",
+}
